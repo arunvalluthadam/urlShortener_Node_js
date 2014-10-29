@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  each user in users
+    li 
+      a(href="/user/#{user.shorturl}") #{user._id}
